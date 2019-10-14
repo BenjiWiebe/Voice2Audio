@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Bot - Voice2Audio
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/telegram-voice-to-audio.rb
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
